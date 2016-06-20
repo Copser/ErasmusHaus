@@ -12,11 +12,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-# from .secret import *
+from .erasmus_secret import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-SECRET_KEY = 'j-%*5#5wtg9#128lvye-ln8^-s6__3&&*jm-_s)&h_2hj61fs_'
 
 
 # Quick-start development settings - unsuitable for production
@@ -158,7 +156,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # loading local_settings.py
 try:
-    from .local_settings import *
+    from .erasmus_local_settings import *
 except Exception as e:
     pass
 
